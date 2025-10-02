@@ -1,41 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact | Stephanie Patricia Anshell</title>
-  <link rel="stylesheet" href="../style.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Stephanie Patricia Anshell</title>
+  <link rel="stylesheet" href="../style.css">
 </head>
 <body>
+  <!-- Navigation -->
   <header class="navbar">
     <div class="container">
       <nav>
-        <a href="/portofolio/#home">Home</a>
-        <a href="/portofolio/#projects">Projects (Scroll)</a>
-        <a href="/portofolio/projects/">Projects Page</a>
-        <a href="/portofolio/#contact">Contact (Scroll)</a>
-        <a href="/portofolio/contact/">Contact Page</a>
-        <a href="/portofolio/cv/">CV</a>
+        <a href="../">Home</a>
+        <a href="../projects/">Projects</a>
+        <a href="./">Contact</a>
+        <a href="../cv/">CV</a>
         <a href="https://github.com/stephaniepatriciaans" target="_blank" rel="noopener">GitHub</a>
       </nav>
     </div>
   </header>
 
-  <section class="section bg-2 contact">
-    <div class="container">
-      <h2>Get in touch</h2>
-      <p>Email: <a href="mailto:sanshell@ucsd.edu">sanshell@ucsd.edu</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/stephaniepatriciaanshell" target="_blank">Profile</a></p>
-      <p>GitHub: <a href="https://github.com/stephaniepatriciaans" target="_blank">stephaniepatriciaans</a></p>
-    </div>
-  </section>
+  <!-- Main -->
+  <main class="section bg-2">
+    <div class="container contact">
+      <h1>Contact</h1>
+      <p>You can reach me at <a href="mailto:sanshell@ucsd.edu">sanshell@ucsd.edu</a></p>
 
+      <form action="mailto:sanshell@ucsd.edu" method="POST" enctype="text/plain" class="contact-form">
+        <label>Email<br>
+          <input type="email" name="email" placeholder="you@example.com" required>
+        </label>
+
+        <label>Subject<br>
+          <input name="subject" placeholder="Hello from my site">
+        </label>
+
+        <label>Message<br>
+          <textarea name="body" rows="6" placeholder="Write your message here"></textarea>
+        </label>
+
+        <button type="submit" class="btn">Send</button>
+      </form>
+    </div>
+  </main>
+
+  <!-- Footer -->
   <footer>
     <div class="container row">
-      <p>© <span id="y"></span> Stephanie Patricia Anshell.</p>
-      <p><a href="/portofolio/#home">Back to Home ↑</a></p>
+      <p>© <span id="y"></span> Stephanie Patricia Anshell. All rights reserved.</p>
+      <p><a href="../">Back to Home ↑</a></p>
     </div>
   </footer>
-  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

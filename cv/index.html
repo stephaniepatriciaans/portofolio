@@ -7,66 +7,107 @@
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-  <nav>
-    <a href="../">Home</a>
-    <a href="../projects/">Projects</a>
-    <a href="../contact/">Contact</a>
-    <a href="./">CV</a>
-    <a href="https://github.com/stephaniepatriciaans" target="_blank" rel="noopener">GitHub</a>
-  </nav>
+  <!-- NAVIGATION -->
+  <header class="navbar">
+    <div class="container">
+      <nav>
+        <a href="../">Home</a>
+        <a href="../projects/">Projects</a>
+        <a href="../contact/">Contact</a>
+        <a href="./">CV</a>
+        <a href="https://github.com/stephaniepatriciaans" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+    </div>
+  </header>
 
-  <main>
-    <h1>Stephanie Patricia Anshell</h1>
-    <p>
-      <a href="mailto:sanshell@ucsd.edu">sanshell@ucsd.edu</a> ·
-      <a href="https://www.linkedin.com/in/stephaniepatriciaanshell" target="_blank" rel="noopener">LinkedIn</a> ·
-      <a href="https://github.com/stephaniepatriciaans" target="_blank" rel="noopener">GitHub</a>
-    </p>
+  <!-- MAIN CONTENT -->
+  <main class="section bg-0">
+    <div class="container cv">
+      <header class="cv-header">
+        <h1>Stephanie Patricia Anshell</h1>
+        <p>
+          <a href="mailto:sanshell@ucsd.edu">sanshell@ucsd.edu</a> ·
+          <a href="https://www.linkedin.com/in/stephaniepatriciaanshell" target="_blank" rel="noopener">LinkedIn</a> ·
+          <a href="https://github.com/stephaniepatriciaans" target="_blank" rel="noopener">GitHub</a>
+        </p>
+      </header>
 
-    <section>
-      <h2>Education</h2>
-      <p><strong>UC San Diego</strong> — B.S. Data Science, Minor in Finance <time>Expected 2026</time></p>
-      <p><strong>UC Berkeley Extension</strong> — Certificate in Data Analytics <time>Nov 2023</time></p>
-    </section>
+      <!-- Education -->
+      <section>
+        <h2>Education</h2>
+        <div class="cv-entry">
+          <strong>UC San Diego</strong> — B.S. Data Science, Minor in Finance 
+          <span class="date">Expected 2026</span>
+        </div>
+        <div class="cv-entry">
+          <strong>UC Berkeley Extension</strong> — Certificate in Data Analytics 
+          <span class="date">Nov 2023</span>
+        </div>
+      </section>
 
-    <section>
-      <h2>Skills</h2>
-      <ul>
-        <li>Python, SQL, JavaScript, MATLAB, C++, NoSQL</li>
-        <li>Pandas, Scikit-learn, TensorFlow, Seaborn, Matplotlib, PySAL, GeoPandas</li>
-        <li>Tableau, Jupyter, Forecasting, Dashboarding</li>
-        <li>English (fluent), Indonesian (native)</li>
-      </ul>
-    </section>
+      <!-- Skills -->
+      <section>
+        <h2>Skills</h2>
+        <ul class="skills">
+          <li>Python, SQL, JavaScript, MATLAB, C++, NoSQL</li>
+          <li>Pandas, Scikit-learn, TensorFlow, Seaborn, Matplotlib, PySAL, GeoPandas</li>
+          <li>Tableau, Jupyter, Forecasting, Dashboarding</li>
+          <li>English (fluent), Indonesian (native)</li>
+        </ul>
+      </section>
 
-    <section>
-      <h2>Projects</h2>
-      <p><strong>TrueFork</strong> — 83k recipes / ~1M ratings; Random Forest for nutrition-rating bias.
-        <a href="https://github.com/stephaniepatriciaans/TrueFork">GitHub</a> ·
-        <a href="https://stephaniepatriciaans.github.io/TrueFork/">Live</a></p>
+      <!-- Projects -->
+      <section>
+        <h2>Projects</h2>
+        <div class="cv-entry">
+          <strong>TrueFork</strong> — 83k recipes / ~1M ratings; Random Forest for nutrition-rating bias. 
+          <a href="https://github.com/stephaniepatriciaans/TrueFork">GitHub</a> · 
+          <a href="https://stephaniepatriciaans.github.io/TrueFork/">Live</a>
+        </div>
+        <div class="cv-entry">
+          <strong>Loan Charge Offs</strong> — RF + DL; 94.9% accuracy. 
+          <a href="https://github.com/stephaniepatriciaans/Project-Loan-Charge-Offs">GitHub</a>
+        </div>
+        <div class="cv-entry">
+          <strong>Urban Transit & Crime</strong> — GeoPandas/PySAL; GWR hotspots. 
+          <a href="https://github.com/stephaniepatriciaans/Urban-Transit-and-Crime">GitHub</a>
+        </div>
+        <div class="cv-entry">
+          <strong>Bank Failures Dashboard</strong> — ~570 FDIC failures; recession clusters. 
+          <a href="https://github.com/stephaniepatriciaans/Bank-Failures">GitHub</a>
+        </div>
+      </section>
 
-      <p><strong>Loan Charge Offs</strong> — RF + DL; 94.9% accuracy.
-        <a href="https://github.com/stephaniepatriciaans/Project-Loan-Charge-Offs">GitHub</a></p>
+      <!-- Experience -->
+      <section>
+        <h2>Experience</h2>
+        <div class="cv-entry">
+          <strong>GAF — Data Scientist Intern</strong> (Jakarta, Jan–Sep 2024)<br>
+          Forecasted demand (ARIMA, Decision Trees), cut stock-outs by 20%, built Tableau KPI trackers.
+        </div>
+        <div class="cv-entry">
+          <strong>STAL Cooperation — Accounting & Data Analyst Intern</strong> (Jakarta, 2021–2023)<br>
+          Digitized expense tracking; ARIMA forecasts ↓ material costs 15%; demand planning +10%.
+        </div>
+      </section>
 
-      <p><strong>Urban Transit & Crime</strong> — GeoPandas/PySAL; GWR hotspots.
-        <a href="https://github.com/stephaniepatriciaans/Urban-Transit-and-Crime">GitHub</a></p>
-
-      <p><strong>Bank Failures Dashboard</strong> — ~570 FDIC failures; recession clusters.
-        <a href="https://github.com/stephaniepatriciaans/Bank-Failures">GitHub</a></p>
-    </section>
-
-    <section>
-      <h2>Experience</h2>
-      <p><strong>GAF — Data Scientist Intern</strong> (Jakarta, Jan–Sep 2024)<br>
-        Forecasted demand (ARIMA, Decision Trees), cut stock-outs by 20%, built Tableau KPI trackers.</p>
-
-      <p><strong>STAL Cooperation — Accounting & Data Analyst Intern</strong> (Jakarta, 2021–2023)<br>
-        Digitized expense tracking; ARIMA forecasts ↓ material costs 15%; demand planning +10%.</p>
-    </section>
-
-    <p><a href="../assets/Stephanie_Patricia_Anshell_Resume.pdf" target="_blank" rel="noopener">
-      Download my PDF résumé
-    </a></p>
+      <!-- Download -->
+      <p class="download">
+        <a href="../assets/Stephanie_Patricia_Anshell_Resume.pdf" target="_blank" rel="noopener" class="btn">
+          Download my PDF résumé
+        </a>
+      </p>
+    </div>
   </main>
+
+  <footer>
+    <div class="container row">
+      <p>© <span id="y"></span> Stephanie Patricia Anshell. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

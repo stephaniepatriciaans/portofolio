@@ -18,7 +18,7 @@
     display: flex;
     gap: 1rem;
     padding: 1rem;
-    background: #1e3a8a; /* deep blue */
+    background: #1e3a8a; 
   }
   nav a {
     color: white;
@@ -46,3 +46,11 @@
     margin-top: 0.5rem;
   }
   
+  .contact-form { display: grid; gap: 0.75rem; margin-top: 1rem; }
+input, textarea, button {
+  width: 100%; padding: 0.6rem; border: 1px solid #ccc; border-radius: 6px;
+  font: inherit;
+}
+button { border: 0; background: #1e3a8a; color: #fff; cursor: pointer; }
+button:hover { opacity: 0.95; }
+label { font-weight: 600; }

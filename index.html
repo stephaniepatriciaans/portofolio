@@ -1,65 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Stephanie Patricia Anshell | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <!-- Navigation -->
   <header class="navbar">
     <div class="container">
       <nav>
-        <a href="./">Home</a>
-        <a href="projects/">Projects</a>
-        <a href="contact/">Contact</a>
-        <a href="cv/">CV</a>
+        <a href="/portofolio/#home">Home</a>
+        <a href="/portofolio/#projects">Projects</a>
+        <a href="/portofolio/projects/">Projects Page</a>
+        <a href="/portofolio/#contact">Contact</a>
+        <a href="/portofolio/contact/">Contact Page</a>
+        <a href="/portofolio/cv/">CV</a>
         <a href="https://github.com/stephaniepatriciaans" target="_blank" rel="noopener">GitHub</a>
       </nav>
     </div>
   </header>
 
   <!-- HERO / INTRO -->
-  <section id="home" class="hero bg-0">
+  <section id="home" class="hero section bg-0">
     <div class="container hero-content">
-      <img src="images/me.png" alt="Stephanie Patricia Anshell" class="profile-img">
+      <img src="images/me.png" alt="Stephanie Patricia Anshell" class="profile-img" />
       <div>
         <h1>Hi, I’m <span>Stephanie Patricia Anshell</span></h1>
         <p>
-          I’m a Data Science major with a Finance minor at UC San Diego.  
-          I enjoy building data-driven tools and projects that connect analytics, finance, and social impact.  
-          Fluent in English and Indonesian, I’m passionate about using data to improve real-world outcomes.
+          I’m a Data Science major with a Finance minor at UC San Diego.
+          I enjoy building data-driven tools that connect analytics, finance,
+          and social impact. Fluent in English and Indonesian.
         </p>
-        <a href="#projects" class="btn">View My Work</a>
+        <div class="actions">
+          <a href="/portofolio/#projects" class="btn">View My Work</a>
+          <a href="/portofolio/projects/" class="btn">Open Projects Page</a>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- PROJECTS -->
-  <section id="projects" class="projects bg-1">
+  <!-- PROJECTS (scroll target) -->
+  <section id="projects" class="projects section bg-1">
     <div class="container">
       <h2>Projects</h2>
       <div class="grid">
-        <div class="card">
+        <article class="card">
           <h3>TrueFork</h3>
           <p>Recipe rating & nutrition ML pipeline (~1M reviews) with RandomForest + SHAP analysis.</p>
-        </div>
-        <div class="card">
+        </article>
+        <article class="card">
           <h3>Urban Transit & Crime</h3>
           <p>GeoPandas/PySAL analysis of transit-crime patterns with interactive dashboards.</p>
-        </div>
-        <div class="card">
+        </article>
+        <article class="card">
           <h3>Mostrans WMS</h3>
           <p>Warehouse management system using React + GraphQL + PostgreSQL.</p>
-        </div>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- CONTACT -->
-  <section id="contact" class="contact bg-2">
+  <!-- CONTACT (scroll target) -->
+  <section id="contact" class="contact section bg-2">
     <div class="container">
       <h2>Contact Me</h2>
       <p>Email: <a href="mailto:sanshell@ucsd.edu">sanshell@ucsd.edu</a></p>
@@ -67,13 +72,29 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer>
-    <p>© <span id="y"></span> Stephanie Patricia Anshell. All Rights Reserved.</p>
+    <div class="container row">
+      <p>© <span id="y"></span> Stephanie Patricia Anshell. All rights reserved.</p>
+      <p><a href="/portofolio/#home">Back to top ↑</a></p>
+    </div>
   </footer>
 
   <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
+    // year
+    document.getElementById('y').textContent = new Date().getFullYear();
+
+    // smooth-scroll only for same-page hashes
+    document.querySelectorAll('a[href^="/portofolio/#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const id = a.getAttribute('href').split('#')[1];
+        const el = document.getElementById(id);
+        if (el) {
+          e.preventDefault();
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          history.replaceState(null, '', '/portofolio/#' + id);
+        }
+      });
+    });
   </script>
 </body>
 </html>

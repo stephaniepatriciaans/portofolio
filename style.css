@@ -166,8 +166,103 @@
     flex-wrap:wrap;gap:.75rem}
 
   footer a{
-    color:#fff}
+    color:#fff} 
   
+  /* ===== CV v2 (sidebar layout) ===== */
+  .cv2 { padding: 0; }
+  .cv2-wrap{
+    width:min(1100px, 95%);
+    margin: 2rem auto;
+    display:grid;
+    grid-template-columns: 320px 1fr;
+    gap: 0;
+    border-radius: 16px;
+    overflow:hidden;
+    box-shadow: 0 18px 40px rgba(0,0,0,.08);
+    background:#fff;
+}
+
+  /* Sidebar */
+  .cv2-side{
+    background:#121a33;            /* deep navy like the template */
+    color:#e9edff;
+    padding: 28px 24px 36px;
+    display:flex; flex-direction:column; gap:22px;}
+
+  .cv2-headshot img{
+    width: 120px; height:120px; border-radius:50%;
+    object-fit:cover; border:3px solid #fff; box-shadow: var(--shadow);}
+
+  .cv2-name h1{line-height:1.15;font-size:1.6rem;margin:6px 0 2px}
+
+  .cv2-name .role{color:#9fb2ff;font-weight:600}
+
+
+  .cv2-block h3{
+    text-transform:uppercase; letter-spacing:.8px;
+    font-size:.9rem; color:#cdd7ff; margin-bottom:8px}
+
+  .cv2-list{list-style:none; display:flex; flex-direction:column; gap:6px; font-size:.95rem}
+  .cv2-list a{color:#cfe0ff}
+  .cv2-download{margin-top:auto}
+
+  /* Main column */
+  .cv2-main{ 
+    padding: 30px 34px 40px; 
+    background:#fff;}
+
+  .cv2-section + .cv2-section{
+    margin-top: 26px;}
+
+  .cv2-section h2{
+    font-size:1.2rem; 
+    text-transform:uppercase; 
+    letter-spacing:.8px;
+    margin: 0 0 12px; 
+    color: var(--primary);
+    border-bottom:2px solid #e7edff; 
+    padding-bottom:6px;}
+
+  .cv2-item{margin: 14px 0;}
+
+  .cv2-item-head{
+    display:flex; 
+    justify-content:space-between; 
+    gap:12px; 
+    align-items:baseline;}
+
+  .cv2-item-head h3{ 
+    margin:0; 
+    font-size:1.05rem }
+
+  .cv2-dates{ 
+    color:#667; 
+    font-size:.95rem; 
+    white-space:nowrap }
+
+  .cv2-links a{ 
+    color: var(--primary); 
+    font-weight:600}
+
+  .cv2-item ul{ 
+    margin:.4rem 0 0 1.1rem}
+
+  .cv2-item p{ 
+    margin:.3rem 0 0 }
+
+  /* Print-friendly */
+  @media print{
+    .navbar, footer{ display:none }
+    .cv2-wrap{ box-shadow:none; border: none; }
+    .cv2-side{ color:#000; background:#f2f4ff }}
+
+  /* Responsive */
+  @media (max-width: 900px){
+    .cv2-wrap{ grid-template-columns: 1fr; }
+    .cv2-side{ flex-direction:row; flex-wrap:wrap; align-items:center; gap:14px }
+    .cv2-download{ width:100% }}
+
+
   /* Responsive tweaks */
   @media (max-width:700px){
     .hero-content{flex-direction:column;text-align:center}

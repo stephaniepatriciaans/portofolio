@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CV — Stephanie Patricia Anshell</title>
-  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../style.css"/>
 </head>
 <body>
-  <!-- NAVIGATION -->
+  <!-- NAV -->
   <header class="navbar">
     <div class="container">
       <nav>
@@ -20,94 +20,162 @@
     </div>
   </header>
 
-  <!-- MAIN CONTENT -->
-  <main class="section bg-0">
-    <div class="container cv">
-      <header class="cv-header">
-        <h1>Stephanie Patricia Anshell</h1>
-        <p>
-          <a href="mailto:sanshell@ucsd.edu">sanshell@ucsd.edu</a> ·
-          <a href="https://www.linkedin.com/in/stephaniepatriciaanshell" target="_blank" rel="noopener">LinkedIn</a> ·
-          <a href="https://github.com/stephaniepatriciaans" target="_blank" rel="noopener">GitHub</a>
+  <!-- CV -->
+  <main class="section cv2">
+    <div class="cv2-wrap">
+      <!-- LEFT SIDEBAR -->
+      <aside class="cv2-side">
+        <div class="cv2-headshot">
+          <img src="../images/me.png" alt="Stephanie Patricia Anshell" />
+        </div>
+
+        <div class="cv2-name">
+          <h1>Stephanie Patricia<br/>Anshell</h1>
+          <p class="role">Data Science · Finance</p>
+        </div>
+
+        <section class="cv2-block">
+          <h3>Contact</h3>
+          <ul class="cv2-list">
+            <li>📧 <a href="mailto:sanshell@ucsd.edu">sanshell@ucsd.edu</a></li>
+            <li>🔗 <a href="https://www.linkedin.com/in/stephaniepatriciaanshell" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li>💻 <a href="https://github.com/stephaniepatriciaans" target="_blank" rel="noopener">GitHub</a></li>
+            <li>📍 San Diego, CA</li>
+          </ul>
+        </section>
+
+        <section class="cv2-block">
+          <h3>Skills</h3>
+          <ul class="cv2-list">
+            <li>Python, SQL, JS, MATLAB, C++</li>
+            <li>Pandas, scikit-learn, TensorFlow</li>
+            <li>Matplotlib, Seaborn, GeoPandas, PySAL</li>
+            <li>Tableau, Forecasting, Dashboards</li>
+          </ul>
+        </section>
+
+        <section class="cv2-block">
+          <h3>Languages</h3>
+          <ul class="cv2-list">
+            <li>English — Fluent</li>
+            <li>Indonesian — Native</li>
+          </ul>
+        </section>
+
+        <section class="cv2-block">
+          <h3>Hobbies</h3>
+          <ul class="cv2-list">
+            <li>Surfing</li>
+            <li>Cooking</li>
+            <li>Volunteering</li>
+          </ul>
+        </section>
+
+        <p class="cv2-download">
+          <a class="btn" href="../assets/Stephanie_Patricia_Anshell_Resume.pdf" target="_blank" rel="noopener">Download PDF</a>
         </p>
-      </header>
+      </aside>
 
-      <!-- Education -->
-      <section>
-        <h2>Education</h2>
-        <div class="cv-entry">
-          <strong>UC San Diego</strong> — B.S. Data Science, Minor in Finance 
-          <span class="date">Expected 2026</span>
-        </div>
-        <div class="cv-entry">
-          <strong>UC Berkeley Extension</strong> — Certificate in Data Analytics 
-          <span class="date">Nov 2023</span>
-        </div>
+      <!-- RIGHT MAIN -->
+      <section class="cv2-main">
+        <article class="cv2-section">
+          <h2>Profile</h2>
+          <p>
+            Data Science major (Finance minor) at UC San Diego. I build data-driven tools that connect analytics,
+            finance, and social impact—shipping models and dashboards that inform real decisions. Bilingual in English
+            and Indonesian; comfortable across data engineering, modeling, and visualization.
+          </p>
+        </article>
+
+        <article class="cv2-section">
+          <h2>Work Experience</h2>
+
+          <div class="cv2-item">
+            <div class="cv2-item-head">
+              <h3>Data Scientist Intern — GAF</h3>
+              <span class="cv2-dates">Jan–Sep 2024 · Jakarta</span>
+            </div>
+            <ul>
+              <li>Built demand forecasting with ARIMA & decision trees; reduced stock-outs by ~20%.</li>
+              <li>Created Tableau KPI trackers and automated reporting to stakeholders.</li>
+            </ul>
+          </div>
+
+          <div class="cv2-item">
+            <div class="cv2-item-head">
+              <h3>Accounting & Data Analyst Intern — STAL Cooperation</h3>
+              <span class="cv2-dates">2021–2023 · Jakarta</span>
+            </div>
+            <ul>
+              <li>Digitized expense tracking; automated forecasting → material costs ↓ ~15%.</li>
+              <li>Supported demand planning (+10%) with time-series analysis and dashboards.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="cv2-section">
+          <h2>Projects</h2>
+
+          <div class="cv2-item">
+            <div class="cv2-item-head">
+              <h3>TrueFork — Recipe Ratings & Nutrition ML</h3>
+              <span class="cv2-links"><a href="https://github.com/stephaniepatriciaans/TrueFork">GitHub</a> · <a href="https://stephaniepatriciaans.github.io/TrueFork/">Live</a></span>
+            </div>
+            <p>~83k recipes / ~1M ratings. RandomForest + SHAP to analyze nutrition-rating bias with fairness checks.</p>
+          </div>
+
+          <div class="cv2-item">
+            <div class="cv2-item-head">
+              <h3>Urban Transit & Crime — GeoAnalytics</h3>
+              <span class="cv2-links"><a href="https://github.com/stephaniepatriciaans/Urban-Transit-and-Crime">GitHub</a></span>
+            </div>
+            <p>GeoPandas/PySAL clustering & GWR hotspots to study transit access and crime patterns.</p>
+          </div>
+
+          <div class="cv2-item">
+            <div class="cv2-item-head">
+              <h3>Mostrans WMS — Full-stack</h3>
+              <span class="cv2-links">React · TypeScript · Apollo · PostgreSQL</span>
+            </div>
+            <p>Inventory/stock ledger modules; schema design, GraphQL API, and UI components.</p>
+          </div>
+
+          <div class="cv2-item">
+            <div class="cv2-item-head">
+              <h3>Bank Failures Dashboard</h3>
+              <span class="cv2-links"><a href="https://github.com/stephaniepatriciaans/Bank-Failures">GitHub</a></span>
+            </div>
+            <p>~570 FDIC failures; cluster analysis around recession events with interactive visuals.</p>
+          </div>
+        </article>
+
+        <article class="cv2-section">
+          <h2>Education</h2>
+
+          <div class="cv2-item">
+            <div class="cv2-item-head">
+              <h3>UC San Diego — B.S. Data Science, Minor in Finance</h3>
+              <span class="cv2-dates">Expected 2026</span>
+            </div>
+          </div>
+
+          <div class="cv2-item">
+            <div class="cv2-item-head">
+              <h3>UC Berkeley Extension — Certificate in Data Analytics</h3>
+              <span class="cv2-dates">Nov 2023</span>
+            </div>
+          </div>
+        </article>
       </section>
-
-      <!-- Skills -->
-      <section>
-        <h2>Skills</h2>
-        <ul class="skills">
-          <li>Python, SQL, JavaScript, MATLAB, C++, NoSQL</li>
-          <li>Pandas, Scikit-learn, TensorFlow, Seaborn, Matplotlib, PySAL, GeoPandas</li>
-          <li>Tableau, Jupyter, Forecasting, Dashboarding</li>
-          <li>English (fluent), Indonesian (native)</li>
-        </ul>
-      </section>
-
-      <!-- Projects -->
-      <section>
-        <h2>Projects</h2>
-        <div class="cv-entry">
-          <strong>TrueFork</strong> — 83k recipes / ~1M ratings; Random Forest for nutrition-rating bias. 
-          <a href="https://github.com/stephaniepatriciaans/TrueFork">GitHub</a> · 
-          <a href="https://stephaniepatriciaans.github.io/TrueFork/">Live</a>
-        </div>
-        <div class="cv-entry">
-          <strong>Loan Charge Offs</strong> — RF + DL; 94.9% accuracy. 
-          <a href="https://github.com/stephaniepatriciaans/Project-Loan-Charge-Offs">GitHub</a>
-        </div>
-        <div class="cv-entry">
-          <strong>Urban Transit & Crime</strong> — GeoPandas/PySAL; GWR hotspots. 
-          <a href="https://github.com/stephaniepatriciaans/Urban-Transit-and-Crime">GitHub</a>
-        </div>
-        <div class="cv-entry">
-          <strong>Bank Failures Dashboard</strong> — ~570 FDIC failures; recession clusters. 
-          <a href="https://github.com/stephaniepatriciaans/Bank-Failures">GitHub</a>
-        </div>
-      </section>
-
-      <!-- Experience -->
-      <section>
-        <h2>Experience</h2>
-        <div class="cv-entry">
-          <strong>GAF — Data Scientist Intern</strong> (Jakarta, Jan–Sep 2024)<br>
-          Forecasted demand (ARIMA, Decision Trees), cut stock-outs by 20%, built Tableau KPI trackers.
-        </div>
-        <div class="cv-entry">
-          <strong>STAL Cooperation — Accounting & Data Analyst Intern</strong> (Jakarta, 2021–2023)<br>
-          Digitized expense tracking; ARIMA forecasts ↓ material costs 15%; demand planning +10%.
-        </div>
-      </section>
-
-      <!-- Download -->
-      <p class="download">
-        <a href="../assets/Stephanie_Patricia_Anshell_Resume.pdf" target="_blank" rel="noopener" class="btn">
-          Download my PDF résumé
-        </a>
-      </p>
     </div>
   </main>
 
   <footer>
     <div class="container row">
-      <p>© <span id="y"></span> Stephanie Patricia Anshell. All rights reserved.</p>
+      <p>© <span id="y"></span> Stephanie Patricia Anshell.</p>
     </div>
   </footer>
 
-  <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
+  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
 </body>
 </html>

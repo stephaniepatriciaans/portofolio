@@ -5,6 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Projects | Stephanie Patricia Anshell</title>
   <link rel="stylesheet" href="../style.css"/>
+  <style>
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .card h3 {
+      margin-bottom: 0.75rem;
+      color: #1e3a8a;
+    }
+    .card ul {
+      margin: 0.5rem 0 1rem 1.25rem;
+    }
+    .tech-stack {
+      font-weight: bold;
+      margin-top: 0.5rem;
+      color: #333;
+    }
+  </style>
 </head>
 <body>
   <header class="navbar">
@@ -25,19 +50,119 @@
     <div class="container">
       <h2>Projects</h2>
       <div class="grid">
+
+        <!-- TrueFork -->
         <article class="card">
-          <h3>TrueFork</h3>
-          <p>Large-scale recipe review pipeline (~1M reviews), RandomForest, SHAP, fairness checks.</p>
+          <h3>🍴 TrueFork — Recipe Ratings & Nutrition Bias Analysis</h3>
+          <p>Analyzing whether healthy recipes are rated differently using <b>1M+ Food.com reviews</b>.</p>
+          <ul>
+            <li>Designed an <b>end-to-end ML pipeline</b> from data ingestion to model interpretation.</li>
+            <li>Cleaned, normalized, and merged nutritional data with user-generated recipe reviews.</li>
+            <li>Engineered features from <b>text sentiment (NLTK/VADER)</b>, ingredient complexity, and nutrition facts.</li>
+            <li>Conducted <b>EDA</b> with visualizations (distributions, scatterplots, residual plots) to explore rating bias patterns.</li>
+            <li>Built predictive models: <b>Linear Regression, Random Forest, and Ridge/Lasso</b>.</li>
+            <li>Applied <b>SHAP interpretability</b> to identify features influencing ratings.</li>
+            <li>Performed fairness testing across nutrition-based subgroups.</li>
+            <li><b>Outcome:</b> Identified bias against healthier recipes — suggesting perception bias users hold on low-calorie/sugar foods.</li>
+          </ul>
+          <p class="tech-stack">Tech Stack: Python, Pandas, NumPy, Scikit-learn, SHAP, Matplotlib, Seaborn, Jupyter</p>
         </article>
+
+        <!-- DSC-80 -->
         <article class="card">
-          <h3>Urban Transit & Crime</h3>
-          <p>GeoPandas/PySAL clustering + interactive viz on transit-access and crime patterns.</p>
+          <h3>📊 DSC-80 Project — End-to-End Predictive Modeling</h3>
+          <p>Course-based project showcasing the <b>full data science lifecycle</b>.</p>
+          <ul>
+            <li>Defined a research question and selected a dataset for prediction/inference.</li>
+            <li>Performed <b>data cleaning, feature scaling, and categorical encoding</b>.</li>
+            <li>Conducted EDA with <b>summary statistics, correlation heatmaps, hypothesis testing</b>.</li>
+            <li>Trained regression and classification models (Logistic Regression, Decision Trees).</li>
+            <li>Evaluated with cross-validation and RMSE/accuracy metrics.</li>
+            <li><b>Outcome:</b> Transparent, reproducible project demonstrating professional workflow.</li>
+          </ul>
+          <p class="tech-stack">Tech Stack: Python, Babypandas/Pandas, NumPy, Scikit-learn, Matplotlib</p>
         </article>
+
+        <!-- Urban Transit -->
         <article class="card">
-          <h3>Mostrans WMS</h3>
-          <p>React + TypeScript + Apollo GraphQL + PostgreSQL, inventory & stock ledger modules.</p>
+          <h3>🚇 Urban Transit & Crime — Geospatial Data Science</h3>
+          <p>Investigating the link between <b>public transit stops</b> and <b>crime rates</b>.</p>
+          <ul>
+            <li>Collected and integrated <b>crime data, transit shapefiles, and census demographics</b>.</li>
+            <li>Applied <b>geospatial joins and clustering</b> using GeoPandas & PySAL.</li>
+            <li>Built <b>choropleth maps, heatmaps, cluster visualizations</b>.</li>
+            <li>Tested significance of correlation between transit hubs and crime.</li>
+            <li><b>Outcome:</b> Identified crime clusters near transit zones, useful for city planning.</li>
+          </ul>
+          <p class="tech-stack">Tech Stack: Python, GeoPandas, PySAL, Matplotlib, Folium, Jupyter</p>
         </article>
-        <!-- Add more later -->
+
+        <!-- Loan Charge-Offs -->
+        <article class="card">
+          <h3>💳 Project Loan Charge-Offs — Credit Risk Analysis</h3>
+          <p>Predicting loan charge-offs to improve lending decisions.</p>
+          <ul>
+            <li>Engineered features such as <b>DTI ratios, credit score categories, and loan terms</b>.</li>
+            <li>Trained Logistic Regression, Decision Trees, and Gradient Boosting models.</li>
+            <li>Evaluated with ROC/AUC, confusion matrices, and recall analysis.</li>
+            <li><b>Outcome:</b> Model achieved AUC > 0.80, identifying top 5 predictors of defaults.</li>
+          </ul>
+          <p class="tech-stack">Tech Stack: Python, Pandas, Scikit-learn, XGBoost, Matplotlib</p>
+        </article>
+
+        <!-- Deep Learning -->
+        <article class="card">
+          <h3>🧠 Deep Learning Challenge — CNN Image Classification</h3>
+          <p>Training neural networks to classify images in a challenge setting.</p>
+          <ul>
+            <li>Built <b>CNN architectures</b> in Keras/TensorFlow with data augmentation.</li>
+            <li>Used <b>dropout, batch norm, early stopping</b> to prevent overfitting.</li>
+            <li>Tuned hyperparameters (optimizer, LR, depth).</li>
+            <li><b>Outcome:</b> Achieved >85% accuracy, beating baseline by 15%.</li>
+          </ul>
+          <p class="tech-stack">Tech Stack: Python, TensorFlow/Keras, NumPy, Matplotlib</p>
+        </article>
+
+        <!-- Credit Risk -->
+        <article class="card">
+          <h3>🏦 Credit Risk Classification — ML for Finance</h3>
+          <p>Classifying borrowers into credit risk tiers.</p>
+          <ul>
+            <li>Addressed class imbalance using SMOTE and class weights.</li>
+            <li>Benchmarked Logistic Regression, Random Forest, XGBoost.</li>
+            <li><b>Outcome:</b> Reduced false negatives by 20%, improving lending safety.</li>
+          </ul>
+          <p class="tech-stack">Tech Stack: Python, Scikit-learn, XGBoost, Pandas, Matplotlib</p>
+        </article>
+
+        <!-- CryptoClustering -->
+        <article class="card">
+          <h3>🪙 CryptoClustering — Market Segmentation</h3>
+          <p>Clustering cryptocurrencies into meaningful groups.</p>
+          <ul>
+            <li>Engineered features: returns, volatility, moving averages.</li>
+            <li>Applied <b>K-Means, DBSCAN, Hierarchical clustering</b>.</li>
+            <li>Identified 3 groups: stablecoins, mid-cap, high-volatility coins.</li>
+            <li><b>Outcome:</b> Helped investors diversify by risk profile.</li>
+          </ul>
+          <p class="tech-stack">Tech Stack: Python, Pandas, Scikit-learn, Matplotlib, Seaborn</p>
+        </article>
+
+        <!-- Bank Failures -->
+        <article class="card">
+          <h3>🏚 Bank Failures — Predicting Institutional Collapse</h3>
+          <p>Forecasting U.S. bank failures with FDIC data.</p>
+          <ul>
+            <li>Engineered ratios: <b>capital adequacy, asset quality, liquidity</b>.</li>
+            <li>Trained Logistic Regression, Random Forest, and ensembles.</li>
+            <li>Visualized risk scores and financial health over time.</li>
+            <li><b>Outcome:</b> Predicted failures with >80% accuracy up to 2 years ahead.</li>
+          </ul>
+          <p class="tech-stack">Tech Stack: Python, Pandas, Scikit-learn, Matplotlib, Tableau/Seaborn</p>
+        </article>
+
+        <!-- Add more cards later -->
+
       </div>
     </div>
   </section>

@@ -1,5 +1,21 @@
 [
   {
+    "title": "Menu Engineering Bot → Pricing & Profitability Analytics",
+    "year": "2026",
+    "href": "https://github.com/stephaniepatriciaans/menu-engineering-bot",
+    "image": "/images/menu_engineering_bot.png",
+    "description": "Universal menu-engineering application that transforms cafe and restaurant POS data into pricing, profitability, and product-level business insights.",
+    "points": [
+      "Built a universal data adapter that automatically maps different CSV and POS schemas into a standardized analytics-ready dataset.",
+      "Developed a deterministic analytics engine for revenue, contribution margin, product popularity, menu-engineering quadrants, demand elasticity, and price simulation.",
+      "Designed validation and capability detection so profit-based recommendations are disabled when cost data is unavailable rather than fabricating missing business data.",
+      "Built an interactive Streamlit dashboard with configurable currencies, column mappings, pricing scenarios, and item-level recommendations.",
+      "Integrated Claude as an explanation layer that converts already-computed analytics into management memos while keeping financial calculations in Python.",
+      "Added automated tests for alternate data schemas, missing cost data, unknown product categories, and estimated-cost scenarios."
+    ],
+    "stack": "Python, Pandas, NumPy, Streamlit, Anthropic Claude API, Data Validation, Pricing Analytics, Unit Testing"
+  },
+  {
     "title": "Adult Obesity Prevalence → County-Level ML Prediction",
     "year": "2026",
     "href": "https://github.com/stephaniepatriciaans/adult-obesity-prevalence",
